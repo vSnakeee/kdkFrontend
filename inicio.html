@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo Animado con Vanta.js</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <!-- Contenedor del fondo animado -->
+    <div id="vanta-bg"></div>
+
+    <!-- Contenido centrado -->
+    <div class="content">
+        <h1>KDK Academy</h1>
+        <p>Descubre los secretos de la medicina estética con cursos diseñados para impulsar tu éxito profesional. Aprende, domina y destaca en un mercado en constante evolución. Un proyecto de <a href="http://html5up.net/license">KDK Clinic</a></p>
+        <a href="index.html" class="btn-transparent">ENTRAR</a>
+    </div>
+
+    <!-- Scripts necesarios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.waves.min.js"></script>
+
+    <!-- Script para inicializar la animación -->
+    <script>
+        VANTA.WAVES({
+            el: "#vanta-bg", // ID del contenedor
+            color: 0x000000, // Color del fondo (negro)
+            shininess: 50, // Nivel de brillo
+            waveHeight: 20, // Altura de las olas
+            waveSpeed: 0.8, // Velocidad de las olas
+            zoom: 1 // Zoom inicial
+        });
+    </script>
+</body>
+</html>

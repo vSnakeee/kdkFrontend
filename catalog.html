@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>KDK Academy</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">KDK Academy</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li><a href="catalog.html">Cursos</a></li>
+      </ul>
+
+      <!-- Barra de búsqueda -->
+      
+
+      <a href="#" class="action_btn">Inicia</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <li><a href="servicies.html">Home</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="catalog.html">Cursos</a></li>
+      <li><a href="#" class="action_btn">Inicia</a></li>
+    </div>
+  </header>
+
+<main>
+
+  ssdasd <br>
+  sd <br>
+  asdasdasd <br>
+  asdasdasddasdasd
+  <div class="search-container">
+    <!-- Ícono de búsqueda que activa el formulario -->
+    <button type="button" id="searchButton">
+      <i class="fas fa-search"></i>
+    </button>
+    <!-- Barra de búsqueda -->
+    <form id="searchForm">
+      <input type="text" placeholder="Buscar..." name="q" id="searchInput">
+    </form>
+  </div>
+</main>
+
+<div class = "contact-footer">
+  <h3>Follow Us</h3>
+  <div class = "social-links">
+    <a href = "#" class = "fab fa-facebook-f"></a>
+    <a href = "#" class = "fab fa-twitter"></a>
+    <a href = "#" class = "fab fa-instagram"></a>
+    <a href = "#" class = "fab fa-linkedin"></a>
+    <a href = "#" class = "fab fa-youtube"></a>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="footer-section">
+  <h3>Compañía</h3>
+  <ul>
+    <li><a href="#">Sobre Crehana</a></li>
+    <li><a href="#">Sign up</a></li>
+  </ul>
+</div>
+<div class="footer-section">
+  <h3>Productos</h3>
+  <ul>
+    <li><a href="#">Desarrollo</a></li>
+    <li><a href="#">Clima</a></li>
+    <li><a href="#">Desempeño</a></li>
+    <li><a href="#">Administra</a></li>
+  </ul>
+</div>
+<div class="footer-section">
+  <h3>Secciones</h3>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+    <li><a href="catalog.html">Cursos</a></li>
+    <li><a href="servicies.html">Servicios</a></li>
+  </ul>
+</div>
+</footer>
+
+<!-- Script para manejar la barra de búsqueda -->
+<script>
+  // Obtén los elementos relevantes
+  const searchForm = document.getElementById('searchForm');
+  const searchButton = document.getElementById('searchButton');
+
+  // Alterna la visibilidad de la barra de búsqueda
+  searchButton.addEventListener('click', () => {
+    searchForm.classList.toggle('active'); // Muestra u oculta la barra de búsqueda
+  });
+
+  // Oculta la barra al hacer clic fuera de ella
+  document.addEventListener('click', (event) => {
+    if (!searchForm.contains(event.target) && !searchButton.contains(event.target)) {
+      searchForm.classList.remove('active'); // Oculta la barra
+    }
+  });
+</script>
+</body>
+</html>

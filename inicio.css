@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;;  
+  }
+  
+  body {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+  }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #vanta-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        /* Estilos para centrar el contenido */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 5%; /* Separación de la izquierda */
+            transform: translateY(-50%); /* Centrado vertical */
+            color: white;
+            text-align: left; /* Alineación izquierda */
+            padding: 5em 5em 3em 5em ;
+			max-width: 100%;
+			width: 75em;
+        }
+        .content h1 {
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0 0 0.5em 0;
+            font-size: 5rem;
+        }
+        .content p {
+            font-size: 2.5rem;
+            margin: 0 0 1.5em 0;
+            color: rgb(117, 117, 117);
+            
+        }
+                /* Estilos del párrafo */
+                p {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+        
+                /* Estilos para el enlace dentro del párrafo */
+                p a {
+                    color: white; /* Mantiene el color blanco del texto */
+                    text-decoration: none; /* Elimina el subrayado */
+                }
+        
+                /* Evitar que cambie el color cuando el enlace es visitado */
+                p a:visited {
+                    color: rgb(117, 117, 117); /* Mantiene el color blanco después de ser visitado */
+                }
+        
+                /* Estilo cuando el cursor pasa sobre el enlace */
+                p a:hover {
+                    color: rgba(182, 181, 181, 0.705); /* Color azul al pasar el cursor */
+                    text-decoration: underline; /* Subrayado al pasar el cursor */
+                }
+        
+                /* Estilo cuando el enlace está activo (haciendo clic) */
+                p a:active {
+                    color: rgb(117, 117, 117); /* Color más oscuro cuando se hace clic */
+                }
+
+        .btn-transparent {
+            background-color: transparent; /* Fondo transparente */
+            color: white; /* Texto blanco */
+            border: 1px solid rgb(138, 138, 138); /* Borde blanco */
+            padding: 22px 70px; /* Espaciado interno */
+            font-size: 1.3rem; /* Tamaño del texto */
+            font-weight: 500;
+            border-radius: 2.4rem; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar a cursor de mano al pasar */
+            text-transform: uppercase; /* Texto en mayúsculas */
+            transition: all 0.3s ease; /* Animación suave para hover */
+        }
+
+        .btn-transparent:hover {
+            background-color: rgba(255, 255, 255, 0.123); /* Fondo blanco */
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Iluminación sutil */
+        }
